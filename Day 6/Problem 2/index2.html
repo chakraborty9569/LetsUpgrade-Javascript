@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Assignment 3 Question 2</title>
+		
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.box{
+				background-color: lightgray;
+				height: 500px;
+				width: 80%;
+				margin-left: 10%;
+				margin-top: 50px;
+				padding: 20px;
+				font-family: sans-serif;
+			}
+			tr:hover{
+				background-color: lightgray;
+			}
+			.table{
+				width: 100%;
+				margin-top: 20px;
+				background-color: white;
+			}
+			tr, th{
+				height: 35px;
+				text-align: center;
+			}
+			input{
+				margin-top: 20px;
+				height: 30px;
+				width: 18%;
+				text-indent: 10px;
+			}
+			.button{
+				height: 30px;
+				width: 6%;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="box">
+			<h1>Kolkata Bus Database</h1>
+			
+			<form>
+				<input type="text" required placeholder="Name" id="name"/>
+				<input type="text" required placeholder="Source" id="source"/>
+				<input type="text" required placeholder="Destination" id="dest"/>
+				<input type="text" required placeholder="Number" id="num"/>
+				<input type="number" required placeholder="Passenger Capacity" id="pass"/>
+				<button type="submit" class="button" onclick="addBus(event)">Add Bus</button>
+			</form>
+			<input type="text" id="input" placeholder="Search by source or destination" onkeyup="searchDisplay()" />
+			
+			<table border="1" class="table" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Source</th>
+						<th>Destination</th>
+						<th>Number</th>
+						<th>Passenger Capacity</th>
+					</tr>
+				</thead>
+				<tbody class="table-body"></tbody>
+			</table>
+		</div>
+		<script src="index2.js"></script>
+	</body>
+</html>

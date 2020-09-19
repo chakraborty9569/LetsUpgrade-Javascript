@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Assignment 3 Question 1</title>
+		
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.box{
+				background-color: lightgray;
+				height: 500px;
+				width: 80%;
+				margin-left: 10%;
+				margin-top: 50px;
+				padding: 20px;
+				font-family: sans-serif;
+			}
+			tr:hover{
+				background-color: lightgray;
+			}
+			.table{
+				width: 100%;
+				margin-top: 20px;
+				background-color: white;
+			}
+			tr, th{
+				height: 35px;
+				text-align: center;
+			}
+			input{
+				margin-top: 20px;
+				height: 30px;
+				text-indent: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="box">
+			<h1>Persons Database</h1>
+			
+			<input type="text" id="input" placeholder="Search by name or city" onkeyup="searchDisplay()" />
+			
+			<table border="1" class="table" cellspacing="0">
+				<thead>
+					<tr>
+						<th>S. No.</th>
+						<th>Name</th>
+						<th>Age</th>
+						<th>City</th>
+						<th>Salary</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody class="table-body"></tbody>
+			</table>
+		</div>
+		<script src="index1.js"></script>
+	</body>
+</html>
